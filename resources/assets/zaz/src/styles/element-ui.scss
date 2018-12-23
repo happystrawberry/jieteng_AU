@@ -1,0 +1,178 @@
+ //to reset element-ui default css
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+// .el-button:focus{
+//   color:#606266 !important;
+//   border-color:#dcdfe6 !important;
+//   background-color:white !important;
+// }
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-form-item__content{
+  box-sizing: border-box;
+}
+.modelinput input{
+  width:210px;
+}
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+.comheader {
+  >.el-input{
+    .el-input__inner{
+      width: 120px;
+      font-size:14px;
+    }
+  }
+  >.other{
+    .el-input__inner{
+      width: 150px;
+    }
+  }
+}
+
+.table {
+  margin-bottom: 40px;
+  &-header {
+    display: flex;
+    align-items: center;
+    div {
+      margin-left: 50px;
+    }
+  }
+}
+.grid-content{
+  font-size:14px;
+}
+
+h3{
+  margin-top:0;
+  margin-bottom:0;
+}
+.el-dialog__header{
+  text-align:center;
+}
+.el-textarea__inner{
+  resize:none;
+}
+.zone-content{
+  margin:30px;
+}
+
+.is-in-pagination{
+  .el-input__inner{
+    width:40px;
+    
+  }
+}
+.nodata{
+   p{
+     text-align:center;
+     color:#aeaeae;
+   }
+}
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+.amount-input{
+  input{
+    text-align:center !important;
+  }
+}
+// .is-undefined{
+//   display:none !important;
+// }
+//通用模板
+.grid-content {
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+  padding: 20px 14px;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  .el-checkbox{
+    margin-left:10px;
+  }
+  .el-tag{
+    padding:0 20px;
+    cursor: pointer;
+  }
+
+  >div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height:22px;
+    &.radio{
+      position: relative;
+      &:after{
+          content:"";
+          display:block;
+          width:100%;
+          height:100%;
+          position: absolute;
+          top:0;
+          left:0;
+          z-index: 11
+      }
+      >span{
+        margin-right:30px;
+      }
+      justify-content: flex-start;
+    }
+    .tips{
+      color:#ff1717;
+    }
+  }
+  .margin {
+    margin-bottom: 20px;
+  }
+
+  .list-level{
+    position:relative;
+    padding-top:10px;
+    width:95%;
+    p{
+      position:absolute;
+      color:rgb(102, 177, 255);
+      top:-30px;
+      right:0;
+    }
+  }
+  .list-info {
+    position: absolute;
+    width: 70px;
+    top: 10px;
+    right: 14px;
+    &-type {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 12px;
+      text-align: center;
+      border: 1px solid rgba(187, 187, 187, 1);
+      border-radius: 70px;
+      margin-bottom: 14px;
+    }
+    &-num {
+      text-align: center;
+      display: block;
+    }
+  }
+}
